@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Architects Daughter';
+    font-weight: 400;
+    src: url('/fonts/ArchitectsDaughter.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  font-weight: 400;
+  src: url('/fonts/HKGrotesk-Regular.woff2') format('woff2'),
+       url('/fonts/HKGrotesk-Regular.woff') format('woff'),
+       url('/fonts/HKGrotesk-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "HK Grotesk";
+  font-weight: 600;
+  src: url('/fonts/HKGrotesk-SemiBold.woff2') format('woff2'),
+       url('/fonts/HKGrotesk-SemiBold.woff') format('woff'),
+       url('/fonts/HKGrotesk-SemiBold.ttf') format('truetype');
+}
+  
+body {
+  background-image: url('/images/grid.png');
+  background-repeat: repeat;
+  background-size: 64px 64px;
+  background-position: center center;
+  font-family: 'HK Grotesk', 'Avenir', 'Helvetica Neue', 'Helvetica', sans-serif;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#greeting {
+  font-family: 'Architects Daughter', 'Avenir', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+#about {
+  max-width: 640px;
+  margin: auto;
+  padding: 0 10px;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  list-style: none;
+  padding: 0 20px;
+}
+
+#nav-mobile {
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#nav-mobile li {
+  margin-top: 20px;
+}
+
+#nav-main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 100px auto 0;
+}
+
+#nav-main li {
+  display: inline-block;
+  position: relative;
+}
+
+.social-link {
+  position: relative;
+}
+
+.social-link img {
+  width: 64px;
+}
+
+.social-link .fill {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.social-link .fill:hover {
+  opacity: 1;
+  transition: cubic-bezier();
+}
+
+
+.other-link-item {
+  top: 100px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+#annotation {
+  position: absolute;
+  font-family: 'Architects Daughter', 'Avenir', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.04em;
+  top: 15px;
+  right: 115px;
+  min-width: 200px;
+}
+
+#annotation span {
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  transform: rotate(-15deg);
+}
+
+#annotation img {
+  position: absolute;
+  width: 50px;
+  top: 0;
+  right: 0;
+}
+
+#lol {
+  position: fixed;
+  right: 50px;
+  bottom: 25px;
+  font-family: 'Architects Daughter', 'Avenir', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+  z-index: -10;
+}
+
+@media only screen and (max-width: 1100px) {
+  #annotation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #greeting {
+    margin-top: 50px;
+    font-size: 2em;
+  }
+
+  #about {
+    font-size: 1em;
+  }
+
+  #nav-main {
+    display: none;
+  }
+
+  #nav-mobile {
+    display: block;
+  }
+
+  .other-link-item {
+    order: 99;
+    top: initial;
+  }
+}

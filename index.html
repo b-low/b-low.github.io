@@ -7,36 +7,45 @@
     <meta name="description" content="Brandon Low's personal website">
     <meta name="author" content="Brandon Low">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1 class="greeting">Hi, I'm Brandon</h1>
-    <div class="about">
+    <h1 id="greeting">Hi, I'm Brandon</h1>
+    <div id="about">
         <p>I’m a junior studying computer Science at the University of Michigan, aspiring to be a software developer.</p>
-        <p>What drives me is wanting to learn how things work and I love combining that curiosity with creativity to create products that positively impact their users.</p>
+        <p>What drives me is wanting to learn how things work, and I love combining this curiosity with creativity to create products that positively impact their users.</p>
     </div>
 
-    <div id="social-links">
-        <a href="https://gitlab.com/SynergyMC" class="social-link">
-            <img src="/images/gitlab-sketch.png" alt="GitLab">
-            <img src="/images/gitlab-fill.png" alt="">
-        </a>
-        <a href="https://github.com/b-low" class="social-link">
-            <img src="/images/github-sketch.png" alt="Github">
-            <img src="/images/github-fill.png" alt="">
-        </a>
-        <a href="https://www.linkedin.com/in/blow/" class="social-link">
-            <img src="/images/linkedin-sketch.png" alt="LinkedIn">
-            <img src="/images/linkedin-fill.png" alt="">
-        </a>
-    </div>
-
-    <div id="annotation">
-        <span>More interesting</span>
-        <img src="/images/arrow.png" alt="">
-    </div>
-
-    <ul id="extra-links">
+    <ul id="nav-main" class="nav">
+        <li>
+            <a href="https://gitlab.com/SynergyMC" class="social-link">
+                <img src="/images/gitlab-sketch.png" alt="GitLab" class="sketch">
+                <img src="/images/gitlab-fill.png" alt="" class="fill">
+            </a>
+            <div id="annotation">
+                <span>More interesting</span>
+                <img src="/images/arrow.png" alt="">
+            </div>
+        </li>
+        <li class="other-link-item"><a href="mailto:bclow@umich.edu">Email</a></li>
+        <li>
+            <a href="https://github.com/b-low" class="social-link">
+                <img src="/images/github-sketch.png" alt="Github" class="sketch">
+                <img src="/images/github-fill.png" alt="" class="fill">
+            </a>
+        </li>
+        <li class="other-link-item"><a href="https://drive.google.com/file/d/1qOxDWNgAO3rfa_22vu8bvPCxGIZt27v9/view?usp=sharing">Resume</a></li>
+        <li>
+            <a href="https://www.linkedin.com/in/blow/" class="social-link">
+                <img src="/images/linkedin-sketch.png" alt="LinkedIn" class="sketch">
+                <img src="/images/linkedin-fill.png" alt="" class="fill">
+            </a>
+        </li>
+    </ul>
+    <ul id="nav-mobile" class="nav">
+        <li><a href="https://gitlab.com/SynergyMC" class="social-link">GitLab (Most interesting)</a></li>
+        <li><a href="https://github.com/b-low" class="social-link">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/blow/" class="social-link">Linkedin</a></li>
         <li><a href="mailto:bclow@umich.edu">Email</a></li>
         <li><a href="https://drive.google.com/file/d/1qOxDWNgAO3rfa_22vu8bvPCxGIZt27v9/view?usp=sharing">Resume</a></li>
     </ul>
