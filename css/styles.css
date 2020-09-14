@@ -64,9 +64,7 @@ a {
   margin-top: 20px;
 }
 
-#nav-mobile a {
-  margin: auto;
-  display: block;
+.button {
   background-color: white;
   padding: 12px;
   width: 200px;
@@ -75,8 +73,13 @@ a {
   border-radius: 10px;
   transition: background-color 0.2s;
 }
-#nav-mobile a:hover {
-  background-color: #EBE7FB;
+.button:hover {
+  background-color: #CFCFCF;
+}
+
+#nav-mobile a {
+  margin: auto;
+  display: block;
 }
 
 #nav-main {
@@ -112,7 +115,7 @@ a {
 }
 
 .other-link-item {
-  top: 100px;
+  top: 120px;
   font-size: 1.2em;
   font-weight: 600;
 }
