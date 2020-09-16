@@ -18,7 +18,12 @@
        url('/fonts/HKGrotesk-SemiBold.woff') format('woff'),
        url('/fonts/HKGrotesk-SemiBold.ttf') format('truetype');
 }
-  
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background-image: url('/images/grid.png');
   background-repeat: repeat;
